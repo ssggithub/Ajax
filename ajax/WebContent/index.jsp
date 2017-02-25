@@ -15,7 +15,7 @@
 			var request = new XMLHttpRequest();
 
 			//4.准备发送请求的数据：url
-			var url = this.href;
+			var url = this.href + "?time=" + new Date();
 			var method = "GET";
 
 			//5.调用xmlhttprequst对象的open方法
