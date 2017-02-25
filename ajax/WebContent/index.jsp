@@ -25,12 +25,16 @@
 			request.send(null);
 
 			//7.为xmlhttprequst对象添加onreadystatechange响应函数
-
-			//8.判断响应是否完成：xmlhttprequst对象的readystate属性值是4的时候
-
-			//9.再判断响应是否可用：xmlhttprequst对象status属性值是200
-
-			//10.响应结果:responseText
+			request.onreadystatechange = function() {
+				//8.判断响应是否完成：xmlhttprequst对象的readystate属性值是4的时候
+				if (request.readyState == 4) {
+					//9.再判断响应是否可用：xmlhttprequst对象status属性值是200
+					if (request.status == 200 || request.status == 304) {
+						//10.响应结果:responseText
+						alert(request.responseText);
+					}
+				}
+			}
 
 			//2.取消a节点的响应行为
 			return false;
