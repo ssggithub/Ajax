@@ -16,4 +16,13 @@
 		<servlet-name>AServlet</servlet-name>
 		<url-pattern>/AServlet</url-pattern>
 	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ValidateUsernameServlet</servlet-name>
+		<servlet-class>cn.itcast.web.servlet.ValidateUsernameServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ValidateUsernameServlet</servlet-name>
+		<url-pattern>/ValidateUsernameServlet</url-pattern>
+	</servlet-mapping>
 </web-app>
