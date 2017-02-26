@@ -23,7 +23,7 @@ public class Demo1 {
 		map.put("name", "zhangSan");
 		map.put("age", 23);
 		map.put("sex", "male");
-		
+		 
 		String s = map.toString();
 		System.out.println(s);
 	}
