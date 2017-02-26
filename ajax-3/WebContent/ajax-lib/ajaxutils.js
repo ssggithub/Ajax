@@ -59,7 +59,7 @@ function ajax(option) {
 	xmlHttp.onreadystatechange = function() {
 		if (xmlHttp.readyState == 4 && xmlHttp.status == 200) {// 双重判断
 			var data;
-			// 获取服务器的响应数据，进行转换！
+			// 获取服务器的响应数据，进行转换!
 			if (!option.type) {// 如果type没有赋值，那么默认为文本
 				data = xmlHttp.responseText;
 			} else if (option.type == "xml") {

@@ -26,7 +26,8 @@
 			1. ajax
 			 */
 			ajax({
-				url : "<c:url value='/AServlet'/>",
+				//url : "<c:url value='/AServlet'/>",
+				url : "AServlet",
 				type : "json",
 				callback : function(data) {
 					document.getElementById("h3").innerHTML = data.name + ", "
