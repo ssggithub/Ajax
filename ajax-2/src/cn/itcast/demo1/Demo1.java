@@ -75,8 +75,6 @@ public class Demo1 {
 	}
 	
 	
-	
-	
 	/*
 	 * 别名(alias)
 	 * 希望：
