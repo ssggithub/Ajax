@@ -74,21 +74,14 @@
 					// 处理浏览器的差异
 					if (window.addEventListener) {
 						name = ele.getElementsByTagName("name")[0].textContent;//其他浏览器
-					} else {
-						name = ele.getElementsByTagName("name")[0].text;//IE支持
-					}
-					if (window.addEventListener) {
 						age = ele.getElementsByTagName("age")[0].textContent;//其他浏览器
-					} else {
-						age = ele.getElementsByTagName("age")[0].text;//IE支持
-					}
-					if (window.addEventListener) {
 						sex = ele.getElementsByTagName("sex")[0].textContent;//其他浏览器
 					} else {
+						name = ele.getElementsByTagName("name")[0].text;//IE支持
+						age = ele.getElementsByTagName("age")[0].text;//IE支持
 						sex = ele.getElementsByTagName("sex")[0].text;//IE支持
 					}
-
-					var text = number + ", " + name + ", " + age + ", " + sex;
+					var text = number + "," + name + "," + age + "," + sex;
 					document.getElementById("h1").innerHTML = text;
 				}
 			};
